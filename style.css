@@ -1,5 +1,13 @@
+body {
+  background-image: url("download.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 h1 {
-  font-size: 100px;
   margin: 0 auto;
-  background-color: red;
+}
+
+video {
+  margin: 300px auto;
 }
