@@ -1,19 +1,8 @@
 body {
-  background-image: url("download.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  height: 1080px;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
 }
 
-h1 {
-  background-color: aqua;
-  color: black;
-  font-size: 50px;
-  width: 20%;
-  margin: 3% auto;
-}
-
-video {
-  margin-top: 11%;
+nav {
+  background-color: red;
 }
