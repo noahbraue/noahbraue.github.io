@@ -1,44 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
+    <head>
+        <link href="resources/css/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <script id="movieinfo-template" type="text/x-handlebars-template">
+            <div id="head">
+                <h1>{{title}}</h1>
+                <h2>({{year}})</h2>
+            </div>
+            <div id="plot">{{plot}}</div>
+            <img id="poster" src="{{poster}}" />
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1></h1>
+            <form onkeydown="verifyKey()">
+                <input type="text" id="searchbar" name="searchbar" placeholder="Search for movies">
+            </form>
+        </header>
+        <main id="info">
 
-      <div id="introduction">
-        <h1>NOAH<br>BRAUE</h1>
-        <img src="resources/imgs/forest.jpg"/>
-      </div>
-
-      <div id="about">
-        <div id="who" class="about-info">
-          <h2>Who Am I?</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dictum, diam egestas tristique commodo, quam lectus feugiat mauris, et vehicula massa orci id nulla. Quisque sit amet aliquam enim. Nunc euismod urna sed nisl iaculis commodo. Pellentesque eu purus nunc. Donec laoreet eu tellus eget fermentum. Morbi mauris odio, congue vitae posuere eget, scelerisque non lorem.</p>
-        </div>
-        <div id="bar"></div>
-        <div id="what" class="about-info">
-          <h2>What Can I Do?</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dictum, diam egestas tristique commodo, quam lectus feugiat mauris, et vehicula massa orci id nulla. Quisque sit amet aliquam enim. Nunc euismod urna sed nisl iaculis commodo. Pellentesque eu purus nunc. Donec laoreet eu tellus eget fermentum. Morbi mauris odio, congue vitae posuere eget, scelerisque non lorem.</p>
-        </div>
-        <img src="./resources/imgs/man2.png"/>
-      </div>
-
-      <div id="work">
-        <h1>My Work</h1>
-        <div id="work-grid">
-
-        </div>
-      </div>
-    </main>
-  </body>
+        </main>
+        <script src="search.js"></script>
+        <script src="cycle.js"></script>
+    </body>
 </html>
