@@ -84,3 +84,7 @@ https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
 ## GTFOBins  
 *GTFOBins is a curated list of Unix binaries that can be used to bypass local security restrictions in misconfigured systems.*  
 https://gtfobins.github.io/  
+
+## Find SUIDs  
+*By using the following command you can enumerate all binaries having SUID permissions.*  
+`find / -perm -u=s -type f 2>/dev/null`  
