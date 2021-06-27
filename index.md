@@ -88,3 +88,7 @@ https://gtfobins.github.io/
 ### Find SUIDs  
 *By using the following command you can enumerate all binaries having SUID permissions.*  
 `find / -perm -u=s -type f 2>/dev/null`  
+
+### Linux Capabilities  
+*Linux capabilities provide a subset of the available root privileges to a process. This effectively breaks up root privileges into smaller and distinctive units.*  
+https://book.hacktricks.xyz/linux-unix/privilege-escalation/linux-capabilities
